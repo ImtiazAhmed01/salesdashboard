@@ -1,11 +1,11 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { getAuthToken, getSalesData } from '@/lib/api';
-import { SalesFilters, SalesResponse } from '@/lib/types';
-import FilterPanel from '@/components/FilterPanel';
-import SalesChart from '@/components/SalesChart';
-import SalesTable from '@/components/SalesTable';
+import { getAuthToken, getSalesData } from '../lib/api'
+import { SalesFilters, SalesResponse } from '../lib/types';
+import FilterPanel from '../components/FilterPanel';
+import SalesChart from '../components/SalesChart';
+import SalesTable from '../components/SalesTable';
 
 export default function Home() {
   const [token, setToken] = useState<string>('');

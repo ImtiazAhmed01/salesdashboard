@@ -45,7 +45,7 @@ export async function getSalesData(
 
   const data: SalesResponse = await response.json();
 
-  // 🔍 Log the returned JSON for debugging
+
   console.log("Fetched Sales Data:", JSON.stringify(data, null, 2));
 
   return data;
